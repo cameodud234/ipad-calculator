@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  calculator
 //
 //  Created by Cameron Dudley on 8/2/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     
     @State var calculatedValue: String = ""
 
@@ -21,14 +21,19 @@ struct ContentView: View {
             }
             .padding()
             .background(Color.yellow)
+            
             TextField("", text: $calculatedValue)
-                .background(Color.accentColor)
+                .disableAutocorrection(true)
+                .textInputAutocapitalization(.never)
+            
+            ButtonsView()
+            
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }
