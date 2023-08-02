@@ -91,3 +91,4 @@ iOSInjectionProject/
 
 # Macos
 .gitignore
+calculator/calculator/.DS_Store
