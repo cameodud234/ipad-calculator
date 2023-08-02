@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct ButtonsView: View {
+    
+    @EnvironmentObject private var value: ButtonOutput
+    
     var body: some View {
         VStack {
+            Label("\(value.output)", systemImage: "")
             HStack {
                 ButtonView(text: "7")
                 ButtonView(text: "8")
@@ -35,5 +39,6 @@ struct ButtonsView: View {
 struct ButtonsView_Previews: PreviewProvider {
     static var previews: some View {
         ButtonsView()
+            .environmentObject(ButtonOutput())
     }
 }
