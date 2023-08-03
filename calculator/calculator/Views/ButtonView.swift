@@ -18,7 +18,7 @@ struct ButtonView: View {
    
     let text: String
     @State private var counter: Int = 0
-    @EnvironmentObject private var value: ButtonOutput
+    @EnvironmentObject var value: ButtonOutput
     
     var body: some View {
         

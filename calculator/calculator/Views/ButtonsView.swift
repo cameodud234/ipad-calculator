@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ButtonsView: View {
     
-    @EnvironmentObject private var value: ButtonOutput
+    @EnvironmentObject var value: ButtonOutput
     
     var body: some View {
         VStack {

@@ -25,8 +25,12 @@ struct MainView: View {
 //            TextField("", text: $calculatedValue)
 //                .disableAutocorrection(true)
 //                .textInputAutocapitalization(.never)
-            
-            ButtonsView()
+            HStack{
+                ButtonsView()
+                VStack {
+                    ButtonView(text: "CE")
+                }
+            }
             
         }
     }
