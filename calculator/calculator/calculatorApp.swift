@@ -13,6 +13,7 @@ struct calculatorApp: App {
         WindowGroup {
             MainView()
                 .environmentObject(ButtonOutput())
+                .environmentObject(Operation())
         }
     }
 }

@@ -9,14 +9,17 @@ import SwiftUI
 
 struct MainView: View {
     
-    @EnvironmentObject var calculatedValue: ButtonOutput
+    @EnvironmentObject var calculatedString: ButtonOutput
+    @EnvironmentObject var calculatedValue: Operation
 
     var body: some View {
         VStack {
             HStack {
                 
-//                Label("\(calculatedValue.output)", systemImage: "")
-//                    .padding(.trailing)
+                if let currentValue = calculatedValue.output {
+                    Label("\(currentValue)", systemImage: "")
+                        .padding(.trailing)
+                }
                 
             }
             .padding()
@@ -28,8 +31,11 @@ struct MainView: View {
             HStack{
                 ButtonsView()
                 VStack {
+                    CButtonView()
                     ClearButtonView()
                     PlusButtonView()
+                    SubtractButtonView()
+                    EqualButtonView()
                 }
             }
             
@@ -41,5 +47,6 @@ struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
             .environmentObject(ButtonOutput())
+            .environmentObject(Operation())
     }
 }

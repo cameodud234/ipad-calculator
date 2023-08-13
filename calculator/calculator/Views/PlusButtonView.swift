@@ -7,10 +7,35 @@
 
 import SwiftUI
 
+//class Operation: ObservableObject {
+//
+//    @Published var output: Double? = nil;
+//
+//}
+
+
 struct PlusButtonView: View {
+    @EnvironmentObject var value: ButtonOutput
+    @EnvironmentObject var opValue: Operation
+    
     var body: some View {
         let buttonAction: () -> Void = {
-            
+//            if let currentValue = opValue.output {
+//                
+//            }
+            if let savedValue = Double(value.output), let currentValue = opValue.output {
+                let finalValue = savedValue + currentValue
+                opValue.output = finalValue
+                value.output = ""
+            }
+            else{
+                if let savedValue = Double(value.output) {
+                    opValue.output = savedValue
+                }
+                else {
+                    
+                }
+            }
         }
         Button(action: buttonAction, label: {
             Text("+")
