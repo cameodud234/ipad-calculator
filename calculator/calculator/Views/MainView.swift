@@ -29,6 +29,7 @@ struct MainView: View {
                 ButtonsView()
                 VStack {
                     ClearButtonView()
+                    PlusButtonView()
                 }
             }
             

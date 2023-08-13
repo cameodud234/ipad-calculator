@@ -18,7 +18,8 @@
 		BD12E9D22A7AC98700D60BD2 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD12E9D12A7AC98700D60BD2 /* ButtonView.swift */; };
 		BD12E9D42A7ACB6100D60BD2 /* NumberText.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD12E9D32A7ACB6100D60BD2 /* NumberText.swift */; };
 		BD12E9D62A7B0EB400D60BD2 /* ClearButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD12E9D52A7B0EB400D60BD2 /* ClearButtonView.swift */; };
-		BD8931942A81BA2E00F4F829 /* PlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8931932A81BA2E00F4F829 /* PlusButton.swift */; };
+		BD309AD82A895AF700B698D1 /* SubtractButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD309AD72A895AF700B698D1 /* SubtractButtonView.swift */; };
+		BD8931942A81BA2E00F4F829 /* PlusButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8931932A81BA2E00F4F829 /* PlusButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +54,8 @@
 		BD12E9D12A7AC98700D60BD2 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		BD12E9D32A7ACB6100D60BD2 /* NumberText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberText.swift; sourceTree = "<group>"; };
 		BD12E9D52A7B0EB400D60BD2 /* ClearButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearButtonView.swift; sourceTree = "<group>"; };
-		BD8931932A81BA2E00F4F829 /* PlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButton.swift; sourceTree = "<group>"; };
+		BD309AD72A895AF700B698D1 /* SubtractButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractButtonView.swift; sourceTree = "<group>"; };
+		BD8931932A81BA2E00F4F829 /* PlusButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +147,8 @@
 				BD12E9CB2A7AC4F100D60BD2 /* ButtonsView.swift */,
 				BD12E9D12A7AC98700D60BD2 /* ButtonView.swift */,
 				BD12E9D52A7B0EB400D60BD2 /* ClearButtonView.swift */,
-				BD8931932A81BA2E00F4F829 /* PlusButton.swift */,
+				BD8931932A81BA2E00F4F829 /* PlusButtonView.swift */,
+				BD309AD72A895AF700B698D1 /* SubtractButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,9 +293,10 @@
 			files = (
 				BD12E9A22A7ABFFD00D60BD2 /* MainView.swift in Sources */,
 				BD12E9A02A7ABFFD00D60BD2 /* calculatorApp.swift in Sources */,
+				BD309AD82A895AF700B698D1 /* SubtractButtonView.swift in Sources */,
 				BD12E9D62A7B0EB400D60BD2 /* ClearButtonView.swift in Sources */,
 				BD12E9D42A7ACB6100D60BD2 /* NumberText.swift in Sources */,
-				BD8931942A81BA2E00F4F829 /* PlusButton.swift in Sources */,
+				BD8931942A81BA2E00F4F829 /* PlusButtonView.swift in Sources */,
 				BD12E9D22A7AC98700D60BD2 /* ButtonView.swift in Sources */,
 				BD12E9CC2A7AC4F100D60BD2 /* ButtonsView.swift in Sources */,
 			);

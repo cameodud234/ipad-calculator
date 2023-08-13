@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PlusButton: View {
+struct PlusButtonView: View {
     var body: some View {
         let buttonAction: () -> Void = {
             
@@ -16,11 +16,14 @@ struct PlusButton: View {
             Text("+")
         })
         .font(.system(size: 30))
+        .padding()
+        .background(Color.gray)
+        .cornerRadius(10)
     }
 }
 
 struct PlusButton_Previews: PreviewProvider {
     static var previews: some View {
-        PlusButton()
+        PlusButtonView()
     }
 }
