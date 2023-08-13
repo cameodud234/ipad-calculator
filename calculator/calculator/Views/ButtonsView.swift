@@ -33,6 +33,11 @@ struct ButtonsView: View {
             }
             .padding()
         }
+        VStack {
+            
+            Text("Hello")
+        }
+        .padding()
     }
 }
 

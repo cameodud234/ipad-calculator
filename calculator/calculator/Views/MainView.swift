@@ -15,8 +15,8 @@ struct MainView: View {
         VStack {
             HStack {
                 
-                Label("\(calculatedValue.output)", systemImage: "")
-                    .padding(.trailing)
+//                Label("\(calculatedValue.output)", systemImage: "")
+//                    .padding(.trailing)
                 
             }
             .padding()
@@ -28,7 +28,7 @@ struct MainView: View {
             HStack{
                 ButtonsView()
                 VStack {
-                    ButtonView(text: "CE")
+                    ClearButtonView()
                 }
             }
             
