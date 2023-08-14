@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct EqualButtonView: View {
+    
+    @EnvironmentObject var value: ButtonOutput
+    @EnvironmentObject var opValue: Operation
+    
     var body: some View {
         let buttonAction: () -> Void = {
+            if let currentValue = Double(value.output) {
+                opValue.output = value.output
+                value.output = ""
+            }
             
         }
         Button(action: buttonAction, label: {

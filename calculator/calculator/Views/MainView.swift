@@ -16,10 +16,8 @@ struct MainView: View {
         VStack {
             HStack {
                 
-                if let currentValue = calculatedValue.output {
-                    Label("\(currentValue)", systemImage: "")
-                        .padding(.trailing)
-                }
+                Label(calculatedValue.output, systemImage: "")
+                    .padding(.trailing)
                 
             }
             .padding()
@@ -35,6 +33,8 @@ struct MainView: View {
                     ClearButtonView()
                     PlusButtonView()
                     SubtractButtonView()
+                    MultiplicationButtonView()
+                    DivisionButtonView()
                     EqualButtonView()
                 }
             }

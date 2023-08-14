@@ -23,6 +23,8 @@
 		BD309ADE2A8973DA00B698D1 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD309ADD2A8973DA00B698D1 /* Operation.swift */; };
 		BD309AE02A897B9D00B698D1 /* ButtonOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD309ADF2A897B9D00B698D1 /* ButtonOutput.swift */; };
 		BD309AE22A897DA600B698D1 /* CButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD309AE12A897DA600B698D1 /* CButtonView.swift */; };
+		BD309AE42A89A5A500B698D1 /* MultplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD309AE32A89A5A500B698D1 /* MultplicationView.swift */; };
+		BD309AE62A89A70100B698D1 /* DivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD309AE52A89A70100B698D1 /* DivisionView.swift */; };
 		BD8931942A81BA2E00F4F829 /* PlusButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8931932A81BA2E00F4F829 /* PlusButtonView.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		BD309ADD2A8973DA00B698D1 /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 		BD309ADF2A897B9D00B698D1 /* ButtonOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOutput.swift; sourceTree = "<group>"; };
 		BD309AE12A897DA600B698D1 /* CButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CButtonView.swift; sourceTree = "<group>"; };
+		BD309AE32A89A5A500B698D1 /* MultplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultplicationView.swift; sourceTree = "<group>"; };
+		BD309AE52A89A70100B698D1 /* DivisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionView.swift; sourceTree = "<group>"; };
 		BD8931932A81BA2E00F4F829 /* PlusButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +163,8 @@
 				BD309AD72A895AF700B698D1 /* SubtractButtonView.swift */,
 				BD309AD92A89649C00B698D1 /* EqualButtonView.swift */,
 				BD309AE12A897DA600B698D1 /* CButtonView.swift */,
+				BD309AE32A89A5A500B698D1 /* MultplicationView.swift */,
+				BD309AE52A89A70100B698D1 /* DivisionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -310,6 +316,8 @@
 				BD309AD82A895AF700B698D1 /* SubtractButtonView.swift in Sources */,
 				BD309ADA2A89649C00B698D1 /* EqualButtonView.swift in Sources */,
 				BD309AE22A897DA600B698D1 /* CButtonView.swift in Sources */,
+				BD309AE62A89A70100B698D1 /* DivisionView.swift in Sources */,
+				BD309AE42A89A5A500B698D1 /* MultplicationView.swift in Sources */,
 				BD12E9D62A7B0EB400D60BD2 /* ClearButtonView.swift in Sources */,
 				BD12E9D42A7ACB6100D60BD2 /* NumberText.swift in Sources */,
 				BD8931942A81BA2E00F4F829 /* PlusButtonView.swift in Sources */,

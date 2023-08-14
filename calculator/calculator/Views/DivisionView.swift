@@ -1,14 +1,13 @@
 //
-//  PlusButton.swift
+//  DivisionView.swift
 //  calculator
 //
-//  Created by Cameron Dudley on 8/7/23.
+//  Created by Cameron Dudley on 8/13/23.
 //
 
 import SwiftUI
 
-
-struct PlusButtonView: View {
+struct DivisionButtonView: View {
     @EnvironmentObject var value: ButtonOutput
     @EnvironmentObject var opValue: Operation
     
@@ -16,7 +15,7 @@ struct PlusButtonView: View {
         let buttonAction: () -> Void = {
             if let v1 = Double(value.output) {
                 if let v2 = Double(opValue.output) {
-                    let v = v1 + v2
+                    let v = v1 / v2
                     opValue.output = String(v)
                 }
                 else {
@@ -26,7 +25,7 @@ struct PlusButtonView: View {
             value.output = ""
         }
         Button(action: buttonAction, label: {
-            Text("+")
+            Text("/")
         })
         .font(.system(size: 30))
         .padding()
@@ -35,8 +34,8 @@ struct PlusButtonView: View {
     }
 }
 
-struct PlusButton_Previews: PreviewProvider {
+struct DivisionButton_Previews: PreviewProvider {
     static var previews: some View {
-        PlusButtonView()
+        DivisionButtonView()
     }
 }

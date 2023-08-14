@@ -31,6 +31,9 @@ struct ButtonsView: View {
                 ButtonView(text: "2")
                 ButtonView(text: "1")
             }
+            HStack {
+                ButtonView(text: "0")
+            }
             .padding()
         }
         .padding()
