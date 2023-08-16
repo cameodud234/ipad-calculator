@@ -12,6 +12,8 @@ struct calculatorApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
+                .environmentObject(ButtonOutput())
+                .environmentObject(Operation())
         }
     }
 }

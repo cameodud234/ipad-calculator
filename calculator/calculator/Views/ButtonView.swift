@@ -5,27 +5,23 @@
 //  Created by Cameron Dudley on 8/2/23.
 //
 
+import Combine
 import SwiftUI
+
+
 
 struct ButtonView: View {
    
     let text: String
-    @State private var showingAlert: Bool = false
-    @State private var value: 
+    @EnvironmentObject var value: ButtonOutput
     
     var body: some View {
         
         let buttonAction: () -> Void = {
-            showingAlert = (showingAlert == true) ? false : true;
+            value.output += text
         }
         
         VStack {
-            if showingAlert {
-                Label("true", systemImage: "")
-            } else {
-                Label("false", systemImage: "")
-            }
-            
             Button(action: buttonAction, label: {
                 Text(text)
                     .foregroundColor(Color.black)
@@ -41,5 +37,6 @@ struct ButtonView: View {
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
         ButtonView(text: ButtonText.sampleData)
+            .environmentObject(ButtonOutput())
     }
 }
