@@ -13,7 +13,7 @@ struct CButtonView: View {
     
     var body: some View {
         let buttonAction: () -> Void = {
-            value.output = ""
+        
         }
         Button(action: buttonAction, label: {
             Text("C")

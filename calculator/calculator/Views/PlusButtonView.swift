@@ -9,22 +9,18 @@ import SwiftUI
 
 
 struct PlusButtonView: View {
-    @EnvironmentObject var value: ButtonOutput
-    @EnvironmentObject var opValue: Operation
+    @EnvironmentObject var totalCalculation: ButtonOutput
+    @EnvironmentObject var currentValue: Operation
     
     var body: some View {
         let buttonAction: () -> Void = {
-            if let v1 = Double(value.output) {
-                if let v2 = Double(opValue.output) {
-                    let v = v1 + v2
-                    opValue.output = String(v)
-                }
-                else {
-                    opValue.output = String(v1)
+            if totalCalculation.output != "" {
+                totalCalculation.output += "+"
+                if let _ = currentValue.previousOut {
                 }
             }
-            value.output = ""
         }
+
         Button(action: buttonAction, label: {
             Text("+")
         })

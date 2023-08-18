@@ -9,6 +9,7 @@ import Foundation
 
 class Operation: ObservableObject {
     
-    @Published var output: String = "";
+    @Published var output: Double? = nil
+    @Published var previousOut: Double? = nil
     
 }

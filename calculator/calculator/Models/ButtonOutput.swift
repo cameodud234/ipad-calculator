@@ -9,6 +9,6 @@ import Foundation
 
 class ButtonOutput: ObservableObject {
     
-    @Published var output = ""
+    @Published var output: String = ""
     
 }
